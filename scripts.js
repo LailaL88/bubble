@@ -79,7 +79,7 @@ function clickCircle() {
     if (circleClicked == 0) {
         playerScore++;
         playerScoreSpan.innerText = playerScore;
-        if (playerScore - score > 2) {
+        if (playerScore - score > 9) {
             clearInterval(myInterval);
             game.innerHTML = "<div class = 'winText'>you win</div>";
         }
