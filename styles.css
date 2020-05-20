@@ -1,0 +1,87 @@
+.gameField {
+    display: flex;
+    justify-content: center;
+}
+
+.gameField p {
+    text-align: center;
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.circleStart {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+}
+
+.footer {
+    margin-top: 490px;
+    text-align: center;
+}
+
+span {
+    margin-left: 20px;
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
+
+.footer p {
+    display: inline;
+    margin-left: 10px;
+}
+
+#buttons {
+    display: inline;
+}
+
+#buttons button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.restartBtn {
+    display: none;
+}
+
+.computerScore,
+.playerScore {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.gameRules {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.winText {
+    position: absolute;
+    font-size: 35px;
+    top: 260px;
+}
+
+@media only screen and (min-width:400px) {
+    #startBtn {
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <script type="text/javascript" src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="gameField">
+        <div class="gameRules">
+            <p>Start game and click the circle</p>
+            <p>Score 10 points more than computer</p>
+        </div>
+        <div class="circle"></div>
+        <div class="circleStart"></div>
+    </div>
+    <div class="footer">
+        <div>
+            <p>Computer score: <span class="computerScore">0</span></p>
+            <p>Player score: <span class="playerScore">0</span></p>
+            <div id="buttons">
+                <button onclick="onGameStart()" id="startBtn">Start Game</button>
+                <button class="restartBtn">Restart Game</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
