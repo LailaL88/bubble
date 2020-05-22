@@ -69,10 +69,8 @@ function getRandomPlace(circle) {
         randomPercent = Math.floor(Math.random() * 90);
     }
     let randomHeight = Math.floor(Math.random() * 70);
-    //let randomPixel = Math.floor(Math.random() * 420);
     circle.style.left = randomPercent + "%";
     circle.style.marginTop = randomHeight + "vh";
-    //circle.style.transform = "translateY(" + randomPixel + "px)";
     getComputerScore();
     getRandomColor(circle);
     getRandomSize(circle);
@@ -100,7 +98,7 @@ function getRandomColor(circle) {
 }
 
 function getRandomSize(circle) {
-    let randomSize = Math.floor(Math.random() * 60 + 60);
+    let randomSize = Math.floor(Math.random() * 50 + 60);
     console.log(randomSize);
     circle.style.height = randomSize + "px";
     circle.style.width = randomSize + "px";
