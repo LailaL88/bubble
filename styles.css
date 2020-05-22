@@ -1,3 +1,8 @@
+body {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+}
+
 .gameField {
     display: flex;
     justify-content: center;
