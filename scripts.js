@@ -64,22 +64,25 @@ function getComputerScore() {
 
 function getRandomPlace(circle) {
     circleClicked = 0;
-    let randomPercent = Math.floor(Math.random() * 78);
+    let randomPercent = Math.floor(Math.random() * 63);
     if (x.matches) {
         randomPercent = Math.floor(Math.random() * 90);
     }
-    let randomPixel = Math.floor(Math.random() * 420);
+    let randomHeight = Math.floor(Math.random() * 70);
+    //let randomPixel = Math.floor(Math.random() * 420);
     circle.style.left = randomPercent + "%";
-    circle.style.transform = "translateY(" + randomPixel + "px)";
+    circle.style.marginTop = randomHeight + "vh";
+    //circle.style.transform = "translateY(" + randomPixel + "px)";
     getComputerScore();
     getRandomColor(circle);
+    getRandomSize(circle);
 }
 
 function clickCircle() {
     if (circleClicked == 0) {
         playerScore++;
         playerScoreSpan.innerText = playerScore;
-        if (playerScore - score > 9) {
+        if (playerScore - score > 2) {
             clearInterval(myInterval);
             game.innerHTML = "<div class = 'winText'>you win</div>";
         }
@@ -94,4 +97,11 @@ function getRandomColor(circle) {
     let c = Math.floor(Math.random() * 255);
     let color = "rgb(" + a + "," + b + "," + c + ")";
     circle.style.backgroundColor = color;
+}
+
+function getRandomSize(circle) {
+    let randomSize = Math.floor(Math.random() * 60 + 60);
+    console.log(randomSize);
+    circle.style.height = randomSize + "px";
+    circle.style.width = randomSize + "px";
 }

@@ -28,11 +28,11 @@ body {
     border-radius: 100%;
     background-color: rgb(255, 0, 221);
     position: absolute;
-    margin-top:250px;
+    margin-top: 250px;
 }
 
 .footer {
-    margin-top: 550px;
+    margin-top: 85vh;
     text-align: center;
 }
 
